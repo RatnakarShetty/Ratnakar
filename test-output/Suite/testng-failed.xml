@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Win8.1FireFoxTest(failed)" parallel="tests">
+    <parameter name="node" value="http://127.0.0.1:4444/wd/hub/"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.actitime.tests.VerifyVersion">
+        <methods>
+          <include name="testVerifyVersion"/>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.actitime.tests.VerifyVersion -->
+      <class name="com.actitime.tests.ValidaLoginLogout">
+        <methods>
+          <include name="testValidLoginLogout"/>
+          <include name="closeApp"/>
+          <include name="openApp"/>
+          <include name="setDriverPath"/>
+        </methods>
+      </class> <!-- com.actitime.tests.ValidaLoginLogout -->
+    </classes>
+  </test> <!-- Win8.1FireFoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
